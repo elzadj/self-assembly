@@ -1,0 +1,25 @@
+<html>
+	<head>
+	 	<meta charset="utf-8" />
+		<link rel="stylesheet"  href="css/style.css">
+		
+	</head>
+	<body onload="blackcanvas()" > <canvas id="canvas" width="1000" height="600" ></canvas>
+	<input type="range" id="verlical" step="1" min="0" max="100" value="50" onchange="updateInput('textInputTemp', this.value);">
+		<input type="text" class="nu" id="textInputTemp" size="3" value="50" onchange="updateInput('verlical', this.value);">
+		<p></p>
+		<input type="range" id = "range" step="1" min="0" max="100" value="50" onchange="updateInput('textInputPress', this.value);" >
+		<input type="text" class="nu" id="textInputPress" size="3" value="50" onchange="updateInput('range', this.value);">
+		<h2><b>Концентрации</b></h2>
+		<input type="text" class="nu darkblue" id="textInputType1" size="3" value="18">
+		<input type="text" class="nu lred" id="textInputType2" size="3" value="25">
+		<input type="text" class="nu lgreen" id="textInputType3" size="3" value="20">
+		<input type="text" class="nu lorange" id="textInputType4" size="3" value="20">
+
+		<input type="button" class="button lightText large square black" id="go" value="Animatis!" onclick="check=1;go()">
+		<input type="button" class="button lightText large square black" id="stop" value="Stop" onclick="stopAnimatis()">
+		<script src="js/script.js"></script>
+	</body>
+
+
+</html>
